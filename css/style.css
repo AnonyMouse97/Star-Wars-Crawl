@@ -47,4 +47,45 @@ table {
 	border-spacing: 0;
 }
 
-/* End of reset */s
+/* End of reset */
+
+
+body{
+	background-color: black;
+	font-family: sans-serif;
+	color: yellow;
+	font-weight: bold;
+	font-size: 3em;
+}
+.lorem{
+	text-align: justify;
+}
+
+
+
+/*perspective txt*/
+section{
+	position: absolute;
+    width: 18em;
+    height: 50em;
+    
+    transform-origin: center bottom;
+    transform: perspective(300px) rotateX(20deg);
+    overflow: hidden;
+
+    margin: 0 auto;
+	left: 0;
+	right: 0;
+	bottom: 0;  
+}
+
+.container{
+	position: absolute;
+	top: 100%;
+	animation: crawl 60s linear;
+}
+
+@keyframes crawl {
+	0% { top: 100%; }
+	100% { top: -170%; }
+}
